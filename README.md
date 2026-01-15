@@ -1,21 +1,20 @@
 # Student Management System (Python)
 
-This is a **menu-driven Student Management System** built using core Python concepts.
-The application allows users to **add, view, update, and delete student records** using a simple terminal-based interface.
+A **menu-driven Student Management System** developed using core Python concepts.
+This terminal-based application allows users to **add, view, update, and delete student records** efficiently. It is ideal for beginners practicing Python fundamentals.
 
 ---
 
 ## Project Description
 
-The Student Management System helps manage basic student information such as:
+This project manages student records using a Python **list of dictionaries**.
+Each student record contains:
 
 * Roll Number
 * Student Name
 * Marks
 
-The program runs continuously using a loop and allows the user to choose operations from a menu until they decide to exit.
-
-This project is ideal for **beginners learning Python**, especially to understand how data is stored and manipulated using lists and dictionaries.
+The program runs continuously until the user chooses to exit.
 
 ---
 
@@ -26,43 +25,8 @@ This project is ideal for **beginners learning Python**, especially to understan
 * View all students
 * Update student marks using roll number
 * Delete student records
-* Uses list of dictionaries for data storage
-* Continuous execution until exit
-* Simple and readable structure
-
----
-
-## How the Program Works
-
-1. The program displays a menu with options.
-2. The user selects an option (1–5).
-3. Based on the choice, a specific function is executed.
-4. Student data is stored in memory using a list.
-5. The program repeats until the user chooses Exit.
-
----
-
-## Functions Used
-
-### 1. add_student()
-
-* Takes roll number, name, and marks as input
-* Stores student data in a dictionary
-* Appends the dictionary to the students list
-
-### 2. show_student()
-
-* Displays all student records
-* Checks if the list is empty before displaying
-
-### 3. update_student()
-
-* Searches for a student using roll number
-* Updates marks if the student exists
-
-### 4. delete_student()
-
-* Deletes a student record based on roll number
+* Continuous execution using a loop
+* Simple and readable logic
 
 ---
 
@@ -70,27 +34,58 @@ This project is ideal for **beginners learning Python**, especially to understan
 
 ### Data Types
 
-* int (Roll Number)
-* float (Marks)
-* string (Student Name)
-* list (Stores all students)
-* dictionary (Stores individual student details)
+* List
+* Dictionary
+* Strings
+* Integers
+* Floating point numbers
+* Booleans
 
 ### Control Statements
 
-* if / elif / else
-* for loop
-* while loop
-* break
+* `if / elif / else`
+* `for` loop
+* `while` loop
 
-### Functions
+### Programming Concepts
 
-* Function definition and calling
-* Code reusability
+* Functions
+* List of dictionaries
+* Input and output handling
+* Basic search and update logic
 
 ---
 
-## Sample Menu Output
+## Project Structure
+
+```
+student-management/
+│
+├── StudentManagement.py   # Main program file
+└── README.md              # Project documentation
+```
+
+---
+
+## How to Run the Program
+
+### Requirements
+
+* Python 3.x installed on your system
+
+### Steps
+
+1. Open terminal or command prompt
+2. Navigate to the project directory
+3. Run the program using:
+
+```bash
+python StudentManagement.py
+```
+
+---
+
+## Application Menu
 
 ```
 ====== Student Management System ======
@@ -103,26 +98,58 @@ This project is ideal for **beginners learning Python**, especially to understan
 
 ---
 
-## Advantages of This Project
+## Sample Output
 
-* Beginner-friendly
-* Improves logical thinking
-* Strengthens understanding of Python basics
-* Useful for academic practicals
-* Can be extended with file handling or database
+```
+Enter your choice (1-5): 1
+Enter Roll No: 1
+Enter New Student Name: Meet
+Enter Students Marks: 88.5
+Student Added Successfully
+```
+
+```
+Enter your choice (1-5): 2
+Roll No:  1
+Name:  Meet
+Marks:  88.5
+```
 
 ---
 
-## Possible Enhancements
+## Edge Cases Handled
 
-* Store data permanently using files (CSV / TXT)
-* Add search functionality
-* Sort students by marks or roll number
-* Add validation for duplicate roll numbers
-* Convert to GUI or web-based application
+* No students available to display
+* Student not found during update or delete
+* Invalid menu choices
+* Program runs until exit option is selected
 
 ---
 
-## Conclusion
+## Future Improvements
 
-This Student Management System is a simple yet powerful Python project that demonstrates how real-world problems can be solved using basic programming concepts. It serves as a strong foundation for learning **data handling, control flow, and function-based programming** in Python.
+* Prevent duplicate roll numbers
+* Store student data in a file (CSV / JSON)
+* Add grade calculation
+* Search student by name
+
+---
+
+## Author
+
+**Meet Tailor**
+Python Programming Learner
+GitHub: [https://github.com/MeetTailor-Data](https://github.com/MeetTailor-Data)
+
+---
+
+## License
+
+This project is created for learning and educational purposes.
+
+---
+
+## Status
+
+* Project Status: Completed
+* Last Updated: 2026
